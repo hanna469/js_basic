@@ -118,6 +118,7 @@ unde 정의(할당)x 변수를 초기화하지않은 오류상태 변수 대입x
 ### toLocaleString()
 * 숫자를 특정 국가 기호에 맞게 문자열로 바꿔주는 함수
     * `ko-kr` : 3자리 단위마다 ,를 넣어줌
+    * `함수명.toLocaleString('ko-kr')`
 ### 내장함수
 * 자바스크립트에서 이미 만들어져 있는 함수, 설치나 정의가 필요없음
 * 브라우저나 자바스크립트가 기본적으로 제공하는 도구
@@ -222,8 +223,8 @@ unde 정의(할당)x 변수를 초기화하지않은 오류상태 변수 대입x
     * 장점) 태그에 바로 이벤트를 작성할 수 있어서 간편함.
     * 단점) 태그에 내부스크립트로 작성된거라 반복 등 활용 불가능. 내부에서만 제한적 사용.
 2. `DOM변수.addEventListener('이벤트',실행함수());`
-    * `btn.addeventListener('click',function(){ alert(); });`
-    * `btn.addeventListener('click', func1);` // 외부에 아래처럼 함수 있을 때 바로 호출 가능
-    * `function func1(){}`
+    * `btn.addeventListener('click',function(){ alert(); });` //매개변수 있을 땐 이 방식으로 사용
+    * `btn.addeventListener('click', func1);` // 외부에 아래(1)처럼 매개변수가 없는 함수가 있을 때 바로 호출 가능
+    * `function func1(){}` //(1)
     * 장점) 반복 활용 가능, 내부, 외부 어디든 자유롭게 사용 가능
     * 단점) 위 1번에 비해 쓰기가 조금 복잡함.
