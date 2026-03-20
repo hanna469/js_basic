@@ -1,0 +1,71 @@
+header {
+    height:60px; background: rgba(255,255,255,0.6);
+    position: fixed; width: 100%; left:0; top:0; z-index: 100;
+}
+header nav {
+    /* float:right; padding-right: 60px; */
+    text-align: right; padding-right: 60px;
+}
+header nav a {display: inline-block; line-height: 60px; margin-left: 20px;}
+#top {
+    position: fixed; width:50px; height: 50px; right:30px; bottom:30px;
+    z-index: 999; 
+    text-align: center; line-height: 50px; font-weight: 500;
+    background-color: #fff; border-radius: 50%; color: #080033;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+#wrap {min-width: 1800px; height: 100vh;}
+#wrap .swiper-wrapper {}
+#wrap .swiper-wrapper .swiper-slide {}
+#wrap .swiper-wrapper .swiper-slide h1 {margin: 120px auto; text-align: center; font-size: 1.25rem; font-weight: 500;}
+#wrap .swiper-wrapper .intro {background-color: thistle;}
+#wrap .swiper-wrapper .profile {background-color: teal;}
+#wrap .swiper-wrapper .project1 {background-color: tan;}
+
+#wrap .swiper-wrapper .project1 .group {
+    position:relative;
+    width:max-content; margin: 0 auto;
+}
+#wrap .swiper-wrapper .project1 .group .web {
+    width: 600px; height:400px;
+    margin: 100px auto;
+    /* overflow: visible; */ /* htidden 내장 */
+}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper {}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .swiper-slide {}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .slide1 {background-color: aquamarine;}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .slide2 {background:linear-gradient(#ddd,#888);}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .slide3 {background-color: yellowgreen;}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .slide4 {background-color: yellow;}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .slide5 {background-color: steelblue;}
+#wrap .swiper-wrapper .project1 .group .web .swiper-wrapper .slide6 {background-color: springgreen; } 
+#wrap .swiper-wrapper .project1 .group .web + .web_page {
+    /* background-color: yellow; */
+    /* transform: scale(1.5); */
+    left:-40px; bottom:20px; text-align: left;
+}
+#wrap .swiper-wrapper .project1 .group .web + .web_page span {/* background-color: rebeccapurple; */}
+#wrap .swiper-wrapper .project1 .group .web + .web_page .swiper-pagination-current {color:red;}
+#wrap .swiper-wrapper .project1 .group .web + .web_page .swiper-pagination-total {color:blue;}
+
+#wrap .swiper-wrapper .project2 {
+    background-color: tomato;
+}
+#wrap .swiper-wrapper .project2 .group {
+    position: relative; width: max-content; margin: 0 auto;
+}
+#wrap .swiper-wrapper .project2 .group .graphic {
+    width:1200px; height:600px;
+}
+#wrap .swiper-wrapper .project2 .group .graphic .swiper-wrapper {}
+#wrap .swiper-wrapper .project2 .group .graphic .swiper-wrapper .swiper-slide {}
+#wrap .swiper-wrapper .project2 .group .graphic .swiper-wrapper .slide1 {background-color: thistle;}
+#wrap .swiper-wrapper .project2 .group .graphic .swiper-wrapper .slide2 {background-color: teal;}
+#wrap .swiper-wrapper .project2 .group .graphic .swiper-wrapper .slide3 {background-color: tan;}
+#wrap .swiper-wrapper .project2 .group .graphic .swiper-wrapper .slide4 {background-color: wheat;}
+#wrap .swiper-wrapper .project2 .group .graphic_page {
+    top: -30px; bottom:auto;
+}
+
+
+
