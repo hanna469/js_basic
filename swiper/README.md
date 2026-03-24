@@ -60,10 +60,13 @@
 ### 기존 Swiper-slide 외부 바깥쪽으로 안겹치는 디자인을 하고 싶을 때
 * 태그 위치 `div.swiper` 다음 형제 위치로 생성
 * `div.swiper`와 생성된 선택태그를 묶어주는 추가 태그 생성(디자인에 따라 다름)
+* 버튼이 슬라이드 양 옆 바깥으로 나가고 싶을 땐 swiper 크기 줄여야함 (자식자손은 크기 건들이지x / swiper-3.css 참고)
+    * `.swiper-wrapper` , `.swiper-slide` 는 width,height 건들이지 않기
+* js 에서 적용대상 작성 시 바로 직전 부모 함께 작성.
 ### 교차 여부에 따라 태그 위치를 다르게 해야하는 이유
 * `div.swiper`에 기본CSS로 `overflow:hidden` 있으므로 그 값을 `visible`로 바꾸면 선택요소 뿐 아닌 `swiper-slide`들도 모두 보이기 때문에 원하는 레이아웃을 만들 수 없음.
 ## Swiper 안에 추가 Swiper 생성 시 안쪽 Swiper 마우스드래그 안될 때 해결방법
-* 안쪽 Swiper js 옵션:값ㅇ로 아래와 같이 작성
+* 안쪽 Swiper js 옵션:값으로 아래와 같이 작성
     * `nested:true,`
     * 부모 swiper와 겹쳐 있을 때 충돌방지 옵션:값
 ## Swiper Custom function

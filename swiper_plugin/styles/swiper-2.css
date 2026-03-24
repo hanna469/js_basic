@@ -71,8 +71,9 @@
 #wrap main .best #best_item .best_swiper .swiper-wrapper .slide4 {}
 #wrap main .best #best_item .best_swiper .swiper-wrapper .slide5 {}
 #wrap main .best #best_item .best_swiper .swiper-wrapper .slide6 {}
+/* =============================================================================== */
 #wrap main .new {}
-#wrap main .new h1 {}
+#wrap main .new h1 {text-align: center;}
 #wrap main .new #new_item {}
 #wrap main .new #new_item .new_swiper {
     width:1100px; margin: 0 auto; border: 2px solid green;
