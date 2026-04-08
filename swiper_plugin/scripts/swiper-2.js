@@ -52,7 +52,7 @@ const heroSwiper = new Swiper(heroBnr,{
         renderFraction:function(current, total){
             console.log(current, total)
             let customPg = `<span class=${current}></span>`;
-            //customPg += `<span>❤️</span>`
+            // customPg += `<span>❤️</span>`
             customPg += `<span class=${total}></span>`;
             return customPg;
         }
