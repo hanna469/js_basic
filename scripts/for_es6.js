@@ -75,7 +75,7 @@ console.log(mNav, gnbUl, gnbClone);
 
 mNav.appendChild(gnbClone); //자식에 붙여넣기
 
-//데스크톱 로그인/장바구니(login_cart > a82) 복제해서 모바일 메뉴 위치(login_cart)에 붙여넣기
+//데스크톱 로그인/장바구니(login_cart > a*2) 복제해서 모바일 메뉴 위치(login_cart)에 붙여넣기
 const mLoginCart = mBg.querySelector('.login_cart');
 const dLoginCart = document.querySelectorAll('.right_menu .login_cart a'); //a
 console.log(mLoginCart,dLoginCart);
